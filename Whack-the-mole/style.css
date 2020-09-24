@@ -1,0 +1,65 @@
+body{
+	background-color: #eeeeee;
+}
+input{
+	cursor: pointer;
+}
+#container{
+	width: 34.2%;
+	position: relative;
+	left: 30%;
+	top: 10vh;
+	display: grid;
+	grid-template-rows: 150px 150px 150px;
+	grid-template-columns: 150px 150px 150px;
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+	grid-template-areas: 
+	"cell1 cell2 cell3"
+	"cell4 cell5 cell6"
+	"cell7 cell8 cell9";
+}
+.cell{
+	width: 150px;
+	height: 150px;
+	background-color: #838383;
+	background-size: cover;
+}
+.cell1{
+	grid-area: cell1;
+}
+.cell2{
+	grid-area: cell2;
+}
+.cell3{
+	grid-area: cell3;
+}
+.cell4{
+	grid-area: cell4;
+}
+.cell5{
+	grid-area: cell5;
+}
+.cell6{
+	grid-area: cell6;
+}
+.cell7{
+	grid-area: cell7;
+}
+.cell8{
+	grid-area: cell8;
+}
+.cell9{
+	grid-area: cell9;
+}
+@media(max-width: 700px){
+	#container{
+		display: grid;
+		grid-template-rows: 60px 60px 60px;
+		grid-template-columns: 60px 60px 60px;
+	}
+	.cell{
+		width: 60px;
+		height: 60px;
+	}
+}

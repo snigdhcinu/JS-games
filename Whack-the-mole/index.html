@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whack-the-mole</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<input type="text" list="levels" placeholder="Select level" required>
+	<datalist id="levels">
+		<option value="Easy">
+		<option value="Medium">
+		<option value="Hard">
+	</datalist>
+	<button type="submit" onclick="start()">Let's start</button>
+	<p id="result">Your Score is :- <span id="score">0</span> </p>
+	<div id="container">
+		<div class="cell cell1" onclick="point_decrease()"></div>
+		<div class="cell cell2" onclick="point_decrease()"></div>
+		<div class="cell cell3" onclick="point_decrease()"></div>
+		<div class="cell cell4" onclick="point_decrease()"></div>
+		<div class="cell cell5" onclick="point_decrease()"></div>
+		<div class="cell cell6" onclick="point_decrease()"></div>
+		<div class="cell cell7" onclick="point_decrease()"></div>
+		<div class="cell cell8" onclick="point_decrease()"></div>
+		<div class="cell cell9" onclick="point_decrease()"></div>
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

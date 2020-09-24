@@ -1,0 +1,48 @@
+body{
+	scroll-behavior: smooth;
+	background-color: #16213e;
+}
+#container{
+display: grid;
+grid-template-columns: 100%;
+grid-template-areas: 
+	"list";
+}
+ul{
+	grid-area: list;
+	justify-self:center;
+	align-self: center;
+	margin-top: 15%;
+	padding-left: 130px;
+	/*padding-top: 1em;*/
+	padding-bottom: 0.8em;
+	height: 2.8em;
+	width: 200px;
+	border-radius: 50px;
+	font-size: 1.5em;
+	font-family: serif;
+	list-style-type: none;
+	overflow-y:  scroll;
+	scrollbar-width:none;
+	background-color: #1a1a2e;
+}
+ul::-webkit-scrollbar{
+	display: none;
+}
+li{
+	height: 0.5em;
+	color: #fff;
+	position: relative;
+	top: 1.1em;
+	padding-bottom: 2em;
+	transition: opacity 0.6s;
+	/*opacity:;*/
+}
+.session-link{
+	color: #fff;
+	text-decoration: none;
+}
+.session-link:hover{
+	cursor: pointer;
+}
+

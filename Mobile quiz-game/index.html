@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fun Learning Zone</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav id="navbar">
+		<ul id="navlink">
+			<li class="nav-item"><a href="#"><span id="nav-logo">Fun Learning Zone</span></a></li>
+			<li class="nav-item"><a href="#"><span id="profile">S</span></a></li>
+		</ul>
+	</nav>
+<div id="container">
+	<div id="video">
+		<iframe width="729" height="410" src="https://www.youtube.com/embed/5DFAcAvT2mI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div id="quiz">
+		<p id="question">Which one of the following is a correct exercise for chest ?</p>
+
+		<ul>
+			<li id="op1" class="op"><input type="radio" name="op"><span class="key" draggable='true'  ondragstart="drag(event,1)">🔑</span>Squats</li>
+			<li id="op2" class="op"><input type="radio" name="op"><span class="key" draggable='true'  ondragstart="drag(event,2)">🔑</span>Dumbell curls</li>
+			<li id="op3" class="op"><input type="radio" name="op"><span class="key" draggable='true'  ondragstart="drag(event,3)">🔑</span>Deadlift</li>
+			<li id="op4" class="op"><input type="radio" name="op"><span class="key" draggable='true'  ondragstart="drag(event,4)">🔑</span>Dumberll flies</li>
+		</ul>
+	</div>
+	<div id="animation" ondrop="drop(event);validate()" ondragover="allowDrop(event);wiggle()" onmouseout="stopWiggle">
+		<img id='chest-image' src="public/close.png">
+	</div>
+</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+<script src="DragDropTouch.js"></script>
+</body>
+</html>
