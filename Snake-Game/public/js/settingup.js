@@ -12,37 +12,6 @@
  */
 
 
-function Snake(){
-	this.initPos=209;
-	this.ititLen=1;
-	this.len=1;
-	this.head=this.initPos;
-	this.fwd=fwd;
-	this.bwd=bwd;
-	this.left=left;
-	this.right=right;
-
-	function fwd(){
-
-	}
-
-	function bwd(){
-
-	}
-
-	function left(){
-
-	}
-
-	function right(){
-
-	}
-
-}
-
-let snake=new Snake();
-
-
 
 // Below condition makes sure that DOM is fully loaded, else will recheck after 100mS
 
@@ -53,9 +22,18 @@ if(document.readyState==='complete'){
 	// Importing the no. of cells
 	let limit=sessionStorage.getItem('cell_no');
 
+	// Setting the properties of our snake
+	sessionStorage.setItem('initPos',209);
+	sessionStorage.setItem('currPos',209);
+	sessionStorage.setItem('length',1);
 
-	// Generating food randomly at a cell
+	sessionStorage.setItem('score',0);
+
+
+	// Generating food randomly at a cell initially
 	let pos=Math.floor(Math.random()*limit)+1;
+	sessionStorage.setItem('food',pos);
+
 	document.getElementsByClassName(`cell${pos}`)[0].style.backgroundColor='#ff414d';
 
 
