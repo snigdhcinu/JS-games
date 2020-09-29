@@ -2,8 +2,15 @@ body{
 	display: grid;
 	justify-items:center;
 }
+#points{
+	height: 2em;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 1px;
+	padding: 0px 1em;
+}
 #grid{
-
+	margin-top: 5em;
 	display: grid;
 	width: 200px;
 	height: 200px;

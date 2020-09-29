@@ -28,6 +28,7 @@ if(document.readyState==='complete'){
 	sessionStorage.setItem('length',1);
 
 	sessionStorage.setItem('score',0);
+	// sessionStorage.setItem('')
 
 
 	// Generating food randomly at a cell initially
@@ -44,6 +45,11 @@ if(document.readyState==='complete'){
 }
 
 },100);
+
+
+// Setting value for our points
+
+document.getElementById('points').innerText=parseInt(sessionStorage.getItem('score'))
 
 
 
